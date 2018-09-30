@@ -11,6 +11,7 @@ export default class AppLoading extends React.Component {
     _loadFonts() {
         return Font.loadAsync({
             'Roboto-Light': require('../../../assets/fonts/Roboto/Roboto-Light.ttf'),
+            'PatrickHandSC-Regular': require('../../../assets/fonts//PatrickHandSC-Regular.ttf')
         });
     }
 

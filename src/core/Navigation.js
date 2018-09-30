@@ -1,10 +1,11 @@
 import React from 'react';
-import { View, Text, Button } from 'react-native';
+import { View, Text } from 'react-native';
 import Image from 'react-native-remote-svg';
 import { createSwitchNavigator, createStackNavigator, createBottomTabNavigator } from 'react-navigation';
 
 import AppLayout, { backgroundImages } from './AppLayout';
 import AppLoading from 'src/core/components/AppLoading';
+import { PrimaryButton } from 'src/core/components/form/Button';
 
 class OnboardingScreen extends React.Component {
 
@@ -12,7 +13,7 @@ class OnboardingScreen extends React.Component {
         return(
             <View>
                 <Text>Onboarding screen</Text>
-                <Button title="Signup" onPress={e => this.props.navigation.navigate('CreateAccount')} />
+                <PrimaryButton title="Signup" onPress={e => this.props.navigation.navigate('CreateAccount')} />
             </View>
         );
     }
@@ -21,7 +22,7 @@ class OnboardingScreen extends React.Component {
 const CreateAccountScreen = (props) => (
     <View>
         <Text>Create account -screen</Text>
-        <Button title="Create account" onPress={e => props.navigation.navigate('App')} />
+        <PrimaryButton title="Create account" onPress={e => props.navigation.navigate('App')} />
     </View>
 );
 
