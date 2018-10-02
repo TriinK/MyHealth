@@ -10,20 +10,20 @@ export default class AppLoading extends React.Component {
 
     _loadFonts() {
         return Font.loadAsync({
-            'Roboto-Light': require('../../../assets/fonts/Roboto/Roboto-Light.ttf'),
-            'PatrickHandSC-Regular': require('../../../assets/fonts//PatrickHandSC-Regular.ttf')
+            'Roboto-Light': require('assets/fonts/Roboto/Roboto-Light.ttf'),
+            'PatrickHandSC-Regular': require('assets/fonts//PatrickHandSC-Regular.ttf')
         });
     }
 
     _loadImages() {
         return Asset.loadAsync([
-            require('./../../../assets/images/icon-learning_center.svg'),
-            require('./../../../assets/images/icon-timeline.svg'),
-            require('./../../../assets/images/icon-health_profile.svg'),
-            require('./../../../assets/images/icon-chat.svg'),
-            require('./../../../assets/images/icon-settings.svg'),
-            require('./../../../assets/images/backgrounds/background-basic.svg'),
-            require('./../../../assets/images/backgrounds/background-big.svg')
+            require('assets/images/icon-learning_center.svg'),
+            require('assets/images/icon-timeline.svg'),
+            require('assets/images/icon-health_profile.svg'),
+            require('assets/images/icon-chat.svg'),
+            require('assets/images/icon-settings.svg'),
+            require('assets/images/backgrounds/background-basic.svg'),
+            require('assets/images/backgrounds/background-big.svg')
         ]);
     }
 
