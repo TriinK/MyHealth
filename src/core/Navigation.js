@@ -5,16 +5,18 @@ import { createSwitchNavigator, createStackNavigator, createBottomTabNavigator }
 
 import AppLayout, { backgroundImages } from './AppLayout';
 import AppLoading from 'src/core/components/AppLoading';
+import OnboardingScreen from '../onboarding/onboarding';
 import { PrimaryButton } from 'src/core/components/form/Button';
 
-class OnboardingScreen extends React.Component {
+class Onboardingscreen extends React.Component {
 
     render() {
         return(
-            <View>
-                <Text>Onboarding screen</Text>
-                <PrimaryButton title="Signup" onPress={e => this.props.navigation.navigate('CreateAccount')} />
-            </View>
+            <OnboardingScreen />
+            //<View>
+            //    <Text>Onboarding screen</Text>
+            //    <PrimaryButton title="Signup" onPress={e => this.props.navigation.navigate('CreateAccount')} />
+            //</View>
         );
     }
 }
@@ -57,8 +59,8 @@ const headerStyles = {
     title:  { fontFamily: 'Roboto-Light', fontWeight: 'normal' },
 }
 
-const navigationOptions = {
-    headerTitle: 'MyHealth@Hand',
+export const navigationOptions = {
+    headerTitle: 'MyHEALTH@HAND',
     mode: 'modal',
     headerStyle: headerStyles.header,
     headerTitleStyle: headerStyles.title,

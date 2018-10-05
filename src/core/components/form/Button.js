@@ -14,6 +14,15 @@ export const PrimaryButton = (props) => (
         />
 );
 
+export const SecondaryButton = (props) => (
+    <Button {...props}
+            buttonStyle={ButtonStyles.secondary}
+            fontFamily='PatrickHandSC-Regular'
+            fontSize={30}
+            color= {'black'}
+    />
+);
+
 const ButtonStyles = {
     container: {
         borderTopRightRadius: 30,
@@ -27,5 +36,10 @@ const ButtonStyles = {
         borderWidth: 1,
         borderTopRightRadius: 30,
         borderBottomLeftRadius: 30,
+    },
+    secondary: {
+        paddingLeft: -10,
+        left:-10,
+        backgroundColor: '#00000000'
     }
 }
